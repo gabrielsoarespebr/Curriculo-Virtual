@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/coolvetica-2');
+
+/* RESET CSS */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MY STYLESHEET */
+/* VARIABLES */
+:root {
+    --bluePrimary: #1D7AB8;
+    --blueSecondary: #18A5C0;
+}
+
+body {
+    font-family: 'Coolvetica', sans-serif;
+}
+
+#presentationBox {
+    margin: auto;
+    margin-left: 7vw;
+
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px -3px 2px var(--bluePrimary);
+}
+
+#occupation{
+    font-size: 1em;
+
+}
+
+#userPhoto {
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: drop-shadow(-7px -7px 7px var(--bluePrimary));
+}
+
+#sectionHome {
+    background: linear-gradient(var(--bluePrimary), var(--blueSecondary));
+    width: 100vw;
+    height: 80vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands{
+    color: white;
+
+    opacity: .6;
+
+    transition: .3s ease-in-out;
+}
+
+.fa-brands:hover{
+    opacity: 1;
+}
