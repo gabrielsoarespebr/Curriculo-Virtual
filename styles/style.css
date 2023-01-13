@@ -42,32 +42,16 @@ img {
 :root {
     --bluePrimary: #1D7AB8;
     --blueSecondary: #18A5C0;
+
+    --blackPrimary: #1D1D1D;
+    --blackSecondary: #2d2d2d;
+
+    --fontPrimary: 'Coolvetica', sans-serif;
 }
 
 body {
-    font-family: 'Coolvetica', sans-serif;
-}
-
-#presentationBox {
-    margin: auto;
-    margin-left: 7vw;
-
-    font-size: 4em;
-    color: white;
-    text-shadow: 3px -3px 2px var(--bluePrimary);
-}
-
-#occupation{
-    font-size: 1em;
-
-}
-
-#userPhoto {
-    height: 100%;
-
-    object-fit: cover;
-
-    filter: drop-shadow(-7px -7px 7px var(--bluePrimary));
+    font-family: var(--fontPrimary);
+    overflow-x: hidden;
 }
 
 #sectionHome {
@@ -79,7 +63,37 @@ body {
     justify-content: space-between;
 }
 
-.fa-brands{
+#presentationBox {
+    margin: auto;
+    margin-left: 7vw;
+
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px -3px 2px var(--bluePrimary);
+}
+
+#occupation {
+    font-size: 1em;
+    margin-top: -3vh;
+}
+
+#toolsRow {
+    width: 18vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userPhoto {
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: drop-shadow(-7px -7px 7px var(--bluePrimary));
+}
+
+.fa-brands,
+#curriculumButton {
     color: white;
 
     opacity: .6;
@@ -87,6 +101,58 @@ body {
     transition: .3s ease-in-out;
 }
 
-.fa-brands:hover{
+.fa-brands:hover,
+#curriculumButton:hover {
     opacity: 1;
+}
+
+#curriculumButton {
+    cursor: pointer;
+}
+
+/* OCCUPATION DESCRIPTION SECTION */
+#sectionOccupation {
+    background: linear-gradient(var(--blackPrimary), var(--blackSecondary));
+    width: 100vw;
+    height: 80vh;
+
+    padding: 0 7vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+#occupationImage{
+    height: 70%;
+
+    /* margin-left: 7vw; */
+
+    border-radius: 1em;
+
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.textContainer{
+    width: 50%;
+    font-size: 1.7em;
+
+    gap: 2em;
+}
+
+.title{
+    margin-bottom: 7vh;
+}
+
+.textContainer p{
+    line-height: 1.3em;
+}
+
+/* SCROLL - BACK */
+body::-webkit-scrollbar {
+    /* width: 8px;
+    background-color: var(--blackPrimary); */
+    display: none;
 }
