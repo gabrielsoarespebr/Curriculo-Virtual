@@ -2,7 +2,7 @@ const userInfo = {
     fullName: "Gabriel Soares Alves Bernardo da Silva",
     occupation: {
         name: "Desenvolvedor front-end",
-        description: "É o profissional responsável pela interface de um site ou de uma aplicação web, garantindo aos usuários uma boa experiência através da usabilidade, acessibilidade e design."
+        description: "É o profissional responsável pela interface de um site ou aplicativo, garantindo aos usuários uma boa experiência em diferentes dispositivos, através da usabilidade, acessibilidade e design."
     },
     url: {
         photo: "./assets/GabrielSoaresNoBackground.png",
